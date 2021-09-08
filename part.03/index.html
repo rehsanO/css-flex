@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <link rel="stylesheet" href="../css/styl.css">
+    <style>
+        .image-res{
+            width: 100%;
+            height: auto;
+        }
+        nav ul{
+            display: flex;
+            height: 40px;
+            align-items: center;
+        }
+        nav ul li{
+            margin-right: 15px;
+            font-size: 14px;
+        }
+        header{
+            display: flex;
+            max-height: 700px;
+            position: relative;
+        }
+        header h1{
+            position: absolute;
+            align-self: center;
+            margin-right: 45px;
+            background-color: rgba(255, 255, 255, 0.171);
+        }
+        .container{
+            display: flex;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+        .container aside{
+            flex: 25%;
+        }
+        .container main{
+            flex: 75%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .container main > div{
+            width: 50%;
+            padding: 0px 14px;
+            margin-bottom: 15px;
+        }
+        .container main div p{
+            font-size: 15px;
+        }
+        aside > div{
+            background-color: #efefef;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        div.side{
+            font-size: 15px;
+        }
+        div.side p{
+            padding-bottom: 7px;
+            margin-bottom: 7px;
+            font-size: 17px;
+            border-bottom: 1px solid #c7c7c7;
+
+        }
+        footer{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        @media only screen and (max-width: 800px){
+            .container{
+                flex-direction: column;
+            }
+            .container main > div{
+                flex: 1000%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="gray">
+            <li><a href="">خانه</a></li>
+            <li><a href="">دوره های آموزشی</a></li>
+            <li><a href="">درباره ما</a></li>
+            <li><a href="">تماس با ما</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>کسب مهارت و شروع تجربه های تازه</h1>
+        <img class="image-res" src="../img/bg.jpg" alt="">
+    </header>
+    <section class="container">
+        <aside >
+            <div class="side">
+                <p>جدیدترین مطالب</p>
+                <ul>
+                    <li><a href="">مطالب 1</a></li>
+                    <li><a href="">مطالب 2</a></li>
+                    <li><a href="">مطالب 3</a></li>
+                    <li><a href="">مطالب 4</a></li>
+                    <li><a href="">مطالب 5</a></li>
+                </ul>
+            </div>
+            <div class="side">
+                <p>جدیدترین مطالب</p>
+                <ul>
+                    <li><a href="">مطالب 1</a></li>
+                    <li><a href="">مطالب 2</a></li>
+                    <li><a href="">مطالب 3</a></li>
+                    <li><a href="">مطالب 4</a></li>
+                    <li><a href="">مطالب 5</a></li>
+                </ul>
+            </div>
+            <div class="side">
+                <p>جدیدترین مطالب</p>
+                <ul>
+                    <li><a href="">مطالب 1</a></li>
+                    <li><a href="">مطالب 2</a></li>
+                    <li><a href="">مطالب 3</a></li>
+                    <li><a href="">مطالب 4</a></li>
+                    <li><a href="">مطالب 5</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <div>
+                <img class="image-res" src="../img/frontend.jpg" alt="">
+                <p>دوره طراحی وب</p>
+            </div>
+
+            <div>
+                <img class="image-res" src="../img/php.jpg" alt="">
+                <p>دوره php</p>
+            </div>
+
+            <div>
+                <img class="image-res" src="../img/android.jpg" alt="">
+                <p>دوره برنامه نویسی اندروید</p>
+            </div>
+            
+            <div>
+                <img class="image-res" src="../img/frontend.jpg" alt="">
+                <p>دوره طراحی وب</p>
+            </div>
+            
+            <div>
+                <img class="image-res" src="../img/php.jpg" alt="">
+                <p>دوره php</p>
+            </div>
+
+            <div>
+                <img class="image-res" src="../img/android.jpg" alt="">
+                <p>دوره برنامه نویسی اندروید</p>
+            </div>
+        </main>
+    </section>
+    <footer class="purple">
+        <p>تمامی حقوق محفوظ می باشد</p>
+    </footer>
+</body>
+</html>

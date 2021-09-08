@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-FLEXBOX جلسه 3</title>
+    <link rel="stylesheet" href="../css/styl.css">
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .container > div{
+            width: 109px;
+            margin: 11px;
+            text-align: center;
+            background-color: #f78fb3;
+            line-height: 94px;
+            font-size: 26px;
+            color: #fff;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;        
+            margin-bottom: 20px;
+        }
+        .wrapper > div{
+            width: 109px;
+            margin: 11px;
+            text-align: center;
+            background-color: #54a0ff;
+            line-height: 94px;
+            color: #fff;
+            font-size: 26px;
+        }
+        .box{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;        
+            margin-bottom: 20px;
+        }
+        .box > div{
+            width: 109px;
+            margin: 11px;
+            text-align: center;
+            background-color: #26de81;
+            line-height: 94px;
+            color: #fff;
+            font-size: 26px;
+            
+        }
+        .content{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;        
+            margin-bottom: 20px;
+            height: 300px;
+        }
+        .content > div{
+            width: 109px;
+            margin: 11px;
+            text-align: center;
+            background-color: #feca57;;
+            line-height: 94px;
+            color: #fff;
+            font-size: 26px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container d-gray">
+        <div style="order: 4;">1</div>
+        <div style="order: 1;">2</div>
+        <div style="order: 4;">3</div>
+        <div style="order: 2;">4</div>
+    </div>
+    <hr>
+    <div class="wrapper gray">
+        <div style="flex-grow: 2;">1</div>
+        <div style="flex-grow: 2;">2</div>
+        <div style="flex-grow: 3;">3</div>
+        <div style="flex-grow: 5;">4</div>
+    </div>
+    <hr>
+    <div class="box black">
+        <div style="flex-shrink: 50;">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div style="flex-shrink: 40;">4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <hr>
+    <div class="content red">
+        <div style="align-self:stretch;">1</div>
+        <div style="align-self: center;">2</div>
+        <div style="align-self: flex-end;">3</div>
+        <div style="align-self: flex-start;">4</div>
+    </div>
+</body>
+</html>
