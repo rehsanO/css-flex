@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styl.css">
+    <style>
+        .container{
+            border: 1px solid #838383;
+            height: 500px;
+            width: 500px;
+            margin: 60px auto;
+            position: relative;
+        }
+        .container div{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50% , -50%);
+        }
+        body{
+            display: flex;
+            justify-content: space-around;
+        }
+        .wrapper{
+            display: flex;
+            border: 1px solid #838383;
+            height: 500px;
+            width: 500px;
+            /* margin: 60px auto; */
+            align-items: center;
+            justify-content: space-around;
+        }
+        .wrapper div{
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body> 
+    <!-- <div class="container blue">
+        <div class="yellow"></div>
+    </div> -->
+    <!-- centering with flex -->
+    <div class="wrapper purple">
+        <div class="yellow">
+
+        </div>
+    </div>
+</body>
+</html>
